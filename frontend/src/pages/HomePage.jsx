@@ -25,7 +25,7 @@ function HomePage() {
     try {
       setLoading(true)
       const response = await axios.post(
-        'http://localhost:8080/api/analysis/upload',
+        'http://3.109.216.195:8080/api/analysis/upload',
         formData
       )
       navigate('/result', { state: { result: response.data } })
